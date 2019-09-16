@@ -63,6 +63,12 @@ export const constantRoutes = [
     meta: { title: 'Example', icon: 'example' },
     children: [
       {
+        path: 'table2',
+        name: '题录列表',
+        component: () => import('@/views/table/index2'),
+        meta: { title: '题录列表', icon: 'table' }
+      },
+      {
         path: 'table',
         name: 'Table',
         component: () => import('@/views/table/index'),
